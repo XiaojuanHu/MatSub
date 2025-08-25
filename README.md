@@ -39,80 +39,80 @@ Important keywords and their descriptions in **input.json** are listed below.
 > -    (use: "numberOfCutoffs": 14)
 
 - **Tag: maxNumberOfIterations**
- 	- Usage: "maxNumberOfIterations": *value*
- 	- Purpose:
+	- Usage: "maxNumberOfIterations": *value*
+	- Purpose:
 > -   specify the max number of iterations of k-means cluatering
 > -    (use: "maxNumberOfIterations": 1000)
 
 ### computations
 -  **Tag: id**
- 	- Usage: "id": "*string*"
- 	- Purpose:
+	- Usage: "id": "*string*"
+	- Purpose:
 > -   specify the id of the job
 > -     pos_median_shift_1_0
 > -    (use: "id": "pos_median_shift_1_0")
 
 -  **Tag: algorithm**
- 	- Usage: "algorithm": "*string*"
- 	- Purpose:
+	- Usage: "algorithm": "*string*"
+	- Purpose:
 > -   specify the searching algorithm
 > -     EMM_SAMPLER
 > -    (use: "algorithm": "EMM_SAMPLER")
 
 ### computation_parameters
 -  **Tag: targets**
- 	- Usage: "targets": "[*string*]"
- 	- Purpose:
+	- Usage: "targets": "[*string*]"
+	- Purpose:
 > -   specify the name of the column of the target property
 > -     property
 > -    (use: "targets": ["property"])
 
 -  **Tag: attr_filter**
- 	- Usage: "attr_filter": "[*string*,*string*]"
- 	- Purpose:
+	- Usage: "attr_filter": "[*string*,*string*]"
+	- Purpose:
 > -   specify the name of the column of the features to exclude
 > -     id, EA
 > -    (use: "attr_filter": "[id,EA]")
 
 -  **Tag: dev_measure**
- 	- Usage: "dev_measure": "*string*"
- 	- Purpose:
+	- Usage: "dev_measure": "*string*"
+	- Purpose:
 > -   specify the method to measure the devation 
 > -     normalized_positive_mean_shift
 > -    (use: "dev_measure": "normalized_positive_mean_shift")
 
 -  **Tag: obj_func**
- 	- Usage: "obj_func": "*string*"
- 	- Purpose:
+	- Usage: "obj_func": "*string*"
+	- Purpose:
 > -   specify the quality function 
 > -     frequency times deviation
 > -    (use: "obj_func": "frequency times deviation")
 
 -  **Tag: num_res**
- 	- Usage: "num_res": "*value*"
- 	- Purpose:
+	- Usage: "num_res": "*value*"
+	- Purpose:
 > -   specify the number of best orthogonal subgroups to return
 > -     2
 > -    (use: "num_res": "2")
 
 -  **Tag: num_threads**
- 	- Usage: "num_threads": *value*
- 	- Purpose:
+	- Usage: "num_threads": *value*
+	- Purpose:
 > -   specify the number of threads to call
 > -     10
 > -    (use: "num_threads": 10)
 
 -  **Tag: num_seeds**
- 	- Usage: "num_seeds": *value*
- 	- Purpose:
+	- Usage: "num_seeds": *value*
+	- Purpose:
 > -   specify the number of seeds of Monte Carlo sampling
 > -     10000000
 > -    (use: "num_seeds": 10000000)
 
 ### dataPath
 -  **Tag: dataPath**
- 	- Usage: "dataPath": "*string*"
- 	- Purpose:
+	- Usage: "dataPath": "*string*"
+	- Purpose:
 > -   specify the path of the data and input files
 > -     .
 > -    (use: "dataPath": ".")
