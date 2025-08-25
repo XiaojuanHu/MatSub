@@ -34,7 +34,7 @@ Important keywords and their descriptions in **input.json** are listed below.
 ### workspaces_defaultMetricRule
 - **Tag: numberOfCutoffs**
 	- Usage: "numberOfCutoffs": *value*
- 	- Purpose:
+	- Purpose:
 > -   specify the number of cutoffs of k-means cluatering
 > -    (use: "numberOfCutoffs": 14)
 
