@@ -1,0 +1,21 @@
+Jul 19, 2025 8:22:20 PM de.unibonn.realkd.common.parameter.DefaultSubCollectionParameter$JsonStringToCollectionParser findByString
+WARNING: Could not find element 'id' in collection.
+Jul 19, 2025 8:22:20 PM de.unibonn.realkd.run.LegacyComputationSpecification build
+INFO: accepted parameter values:
+table=WPO 1.0.0
+targets=[property]
+modeling=Empirical distribution
+dev_measure=norm. neg. mean shift
+controls=Optional.empty
+props=Statements about WPO 1.0.0
+attr_filter=[]
+obj_func=frequency times deviation
+num_res=1
+cutoff_in_util=2.0
+qual_func_params= 
+hard_cutoffs= 
+num_threads=10
+num_seeds=1000000
+seed_dist=P(x)=freq(x)^a
+a=1
+post_proc=LinearRandomPruner
