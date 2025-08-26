@@ -1,0 +1,124 @@
+[{
+  "type" : "exceptionalSubgroupPattern",
+  "descriptor" : {
+    "type" : "subgroup",
+    "table" : "wpo_1_0_0",
+    "selector" : {
+      "type" : "attributeBasedConjunction",
+      "table" : "wpo_1_0_0",
+      "attributes" : [ "EC", "ECH", "IPH", "dd", "ddH" ],
+      "constraints" : [ {
+        "type" : "greaterOrEquals",
+        "value" : -5.127750000000001
+      }, {
+        "type" : "lessOrEquals",
+        "value" : -3.0673500000000002
+      }, {
+        "type" : "lessOrEquals",
+        "value" : 8.994
+      }, {
+        "type" : "greaterOrEquals",
+        "value" : 2.0698
+      }, {
+        "type" : "lessOrEquals",
+        "value" : 2.6074
+      } ]
+    },
+    "reference" : "global",
+    "targetAttributes" : [ "property" ],
+    "targetModellingMethod" : [ "de.unibonn.realkd.patterns.models.mean.MetricEmpiricalDistributionFactory", "Empirical distribution" ],
+    "targetReferenceModel" : {
+      "type" : "metricEmpiricalDistribution",
+      "means" : [ -0.009958289511156153 ],
+      "covarianceMatrix" : [ [ 0.927848686016975 ] ],
+      "medians" : [ 0.09826914 ],
+      "medianDeviations" : [ 0.7341033953083159 ],
+      "mins" : [ -4.50660046 ],
+      "maxs" : [ 3.5997409 ]
+    },
+    "targetLocalModel" : {
+      "type" : "metricEmpiricalDistribution",
+      "means" : [ -1.3533670572784808 ],
+      "covarianceMatrix" : [ [ 0.8347493019248011 ] ],
+      "medians" : [ -1.124685001 ],
+      "medianDeviations" : [ 0.6989258571668006 ],
+      "mins" : [ -4.50660046 ],
+      "maxs" : [ -0.14232301 ]
+    }
+  },
+  "deviationMeasure" : "normalized_max_constant_ref",
+  "measurements" : [ {
+    "measure" : "frequency",
+    "value" : 0.16024340770791076,
+    "auxiliaryMeasurements" : [ {
+      "measure" : "support",
+      "value" : 79.0
+    } ]
+  }, {
+    "measure" : "normalized_max_constant_ref",
+    "value" : 0.4616218024650272
+  }, {
+    "measure" : "mean_absolute_median_deviation_reduction",
+    "value" : 0.04791905113957572
+  } ]
+},{
+  "type" : "exceptionalSubgroupPattern",
+  "descriptor" : {
+    "type" : "subgroup",
+    "table" : "wpo_1_0_0",
+    "selector" : {
+      "type" : "attributeBasedConjunction",
+      "table" : "wpo_1_0_0",
+      "attributes" : [ "EB", "ECH", "IPH", "dd" ],
+      "constraints" : [ {
+        "type" : "lessThan",
+        "value" : -5.6876
+      }, {
+        "type" : "greaterOrEquals",
+        "value" : -6.4108
+      }, {
+        "type" : "lessThan",
+        "value" : 6.7975
+      }, {
+        "type" : "lessThan",
+        "value" : 2.1988
+      } ]
+    },
+    "reference" : "global",
+    "targetAttributes" : [ "property" ],
+    "targetModellingMethod" : [ "de.unibonn.realkd.patterns.models.mean.MetricEmpiricalDistributionFactory", "Empirical distribution" ],
+    "targetReferenceModel" : {
+      "type" : "metricEmpiricalDistribution",
+      "means" : [ -0.009958289511156153 ],
+      "covarianceMatrix" : [ [ 0.927848686016975 ] ],
+      "medians" : [ 0.09826914 ],
+      "medianDeviations" : [ 0.7341033953083159 ],
+      "mins" : [ -4.50660046 ],
+      "maxs" : [ 3.5997409 ]
+    },
+    "targetLocalModel" : {
+      "type" : "metricEmpiricalDistribution",
+      "means" : [ -0.710465355722222 ],
+      "covarianceMatrix" : [ [ 0.22483392031829375 ] ],
+      "medians" : [ -0.6598198 ],
+      "medianDeviations" : [ 0.3337507253580247 ],
+      "mins" : [ -2.3788259 ],
+      "maxs" : [ -0.037958499 ]
+    }
+  },
+  "deviationMeasure" : "normalized_max_constant_ref",
+  "measurements" : [ {
+    "measure" : "frequency",
+    "value" : 0.07302231237322515,
+    "auxiliaryMeasurements" : [ {
+      "measure" : "support",
+      "value" : 36.0
+    } ]
+  }, {
+    "measure" : "normalized_max_constant_ref",
+    "value" : 0.44874737411748966
+  }, {
+    "measure" : "mean_absolute_median_deviation_reduction",
+    "value" : 0.5453627820126716
+  } ]
+}]

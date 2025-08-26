@@ -1,0 +1,22 @@
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.data.xarf.XarfParsing parse
+INFO: Parsing input file
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.data.xarf.XarfParsing parse
+INFO: Done parsing ARFF file
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.data.table.CSV csvStringListToListOfLists
+INFO: Done reading data (493 number of rows)
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.data.xarf.Xarf implicitMatching
+SEVERE: Error; skipping attribute for declaration: de.unibonn.realkd.data.xarf.AttributeDeclaration@45be7cd5
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.data.xarf.Xarf attributes
+INFO: Done creating attributes (23 attributes created)
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.data.xarf.Xarf derivedAttributes
+INFO: Done creating derived attributes (0 derived attributes created)
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.data.propositions.StandardPropositionalizationScheme apply
+INFO: Done compiling proposition list (644 propositions added)
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.common.workspace.Workspaces$WorkspaceWithFileBackups storeInFile
+INFO: writing backup: population_of_wpo_1_0_0
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.common.workspace.Workspaces$WorkspaceWithFileBackups storeInFile
+INFO: writing backup: wpo_1_0_0
+Aug 25, 2025 5:56:48 PM de.unibonn.realkd.common.workspace.Workspaces$WorkspaceWithFileBackups storeInFile
+INFO: writing backup: statements_about_wpo_1_0_0
+Aug 25, 2025 6:33:32 PM de.unibonn.realkd.common.workspace.Workspaces$WorkspaceWithFileBackups storeInFile
+INFO: writing backup: $results_of_pos_median_shift_1_0
