@@ -1,0 +1,5 @@
+package ua.ac.be.viz;
+
+public enum PlotterHeaderTypes {
+	TITLE, TYPE, XAXISNAME, YAXISNAME, DIMENSION1, DIMENSION2, MINX, MINY, MAXX, MAXY, COORDSFILE, YRANGE, XRANGE
+}

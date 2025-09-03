@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>90</y>
+      <w>270</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Model
+--
++getDescriptor():Descriptor
++getMeasurements():Measurement...
++hasMeasurementOf(Measure):boolean
++getValue(Measure):double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>430</x>
+      <y>90</y>
+      <w>270</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ModelDescriptor
+&lt;&lt;Interface&gt;&gt;
+--
++getDataArtifact():DataArtifact
++getRows():int...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>240</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;170;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>430</x>
+      <y>320</y>
+      <w>270</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>LogicallyDescribedLocalModelDescriptor
+&lt;&lt;Interface&gt;&gt;
+--
++getLogicalSelector:Selector</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>390</y>
+      <w>270</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ExceptionalModelPatternDescriptor
+--
++getLocalModel():TableSubspaceMD
++getGlobalModel():TableSubspaceMD
++getDistanceFunction():DistanceFunction
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>160</y>
+      <w>270</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Association
+--
++getPropositions():Proposition...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>430</x>
+      <y>210</y>
+      <w>270</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>TableSubspaceModelDescriptor
+&lt;&lt;Interface&gt;&gt;
+--
++getAttributes():Attributes...
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>310</y>
+      <w>270</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>UnivariateGaussian
+--
++getMeanEstimate():double
++getVarianceEstimate():double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>230</y>
+      <w>270</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>SubspaceOutlierModelDescriptor
+--
++getModel():TableSubspaceModel
++getOutliers():int...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>90</y>
+      <w>270</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>PatternSet
+--
+getPatterns():Pattern...</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

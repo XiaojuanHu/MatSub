@@ -1,0 +1,11 @@
+#************* Binaries
+.class
+bin/
+/target/
+#************* Eclipse and linux specific
+.directory
+.settings/*
+#************* Local directories
+/jobs
+/data
+/output

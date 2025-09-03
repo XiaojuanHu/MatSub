@@ -1,0 +1,50 @@
+<assembly>
+	<id>release</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<!-- <files> -->
+	<!-- <file> -->
+	<!-- <source>target/release-files/startup.bat</source> -->
+	<!-- <lineEnding>dos</lineEnding> -->
+	<!-- </file> -->
+	<!-- <file> -->
+	<!-- <source>target/release-files/startup.sh</source> -->
+	<!-- <lineEnding>unix</lineEnding> -->
+	<!-- <fileMode>0550</fileMode> -->
+	<!-- </file> -->
+	<!-- </files> -->
+	<fileSets>
+		<fileSet>
+			<directory>target/external-resources/data</directory>
+			<outputDirectory>/data</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>target/external-resources/jsh</directory>
+			<outputDirectory>/bin</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>target/external-resources/jobs</directory>
+			<outputDirectory>/jobs</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>target/kdondoc</directory>
+			<outputDirectory>/doc</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>target/external-resources/root-content</directory>
+			<outputDirectory>/</outputDirectory>
+			<!-- <excludes> -->
+			<!-- <exclude>startup.sh</exclude> -->
+			<!-- <exclude>startup.bat</exclude> -->
+			<!-- </excludes> -->
+		</fileSet>
+		<fileSet>
+			<directory>target</directory>
+			<includes>
+				<include>*.jar</include>
+			</includes>
+			<outputDirectory>/bin</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>

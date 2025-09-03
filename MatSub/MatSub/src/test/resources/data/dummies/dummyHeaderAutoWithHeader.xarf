@@ -1,0 +1,7 @@
+@relation dummyHeaderAutoWithHeader
+
+@data header=auto
+dummyAttr1, dummyAttr2, dummyAttr3
+1,2,3
+3,2,1
+2,1,3

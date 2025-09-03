@@ -1,0 +1,44 @@
+Area Name;name;Abbreviated name of district
+Type;categoric;Character of district
+State;categoric;Federal State
+Region;categoric;Geographical region of district
+CDU 2005;numeric;Percentage of votes for conservative party 2005 (second vote)
+SPD 2005;numeric;Percentage of votes for centre-left party 2005 (second vote)
+FDP 2005;numeric;Percentage of votes for liberal party 2005 (second vote)
+GREEN 2005;numeric;Percentage of votes for green party 2005 (second vote)
+LEFT 2005;numeric;Percentage of votes for left party 2005 (second vote)
+Non-Voters 2005;numeric;Proportion of non-voters in Bundestag elections 2005 (w.r.t registered votes)
+CDU 2009;numeric;Percentage of votes for conservative party 2009 (second vote)
+SPD 2009;numeric;Percentage of votes for centre-left party 2009 (second vote)
+FDP 2009;numeric;Percentage of votes for liberal party 2009 (second vote)
+GREEN 2009;numeric;Percentage of votes for green party 2009 (second vote)
+LEFT 2009;numeric;Percentage of votes for left party 2009 (second vote)
+Non-Voters 2009;numeric;Proportion of non-voters in Bundestag elections 2009 (w.r.t registered votes)
+Pop. density;numeric;Inhabitants per sq km
+Elderly pop.;numeric;Percentage of Inhabitants older than 64 years
+Old pop.;numeric;Percentage of Inhabitants between 45 and 64 years
+Mid-aged pop.;numeric;Percentage of Inhabitants between 25 and 44 years
+Young pop.;numeric;Percentage of Inhabitants between 18 and 24 years
+Children pop.;numeric;Percentage of Inhabitants below 18 years
+Migration balance;numeric;Population gain per 1000 inhabitants
+Social welfare;numeric;Percentage of Inhabitants who receive social welfare benefits
+Poor elderly inh.;numeric;Percentage of welfare recipients older than 65 years
+Poor child.;numeric;Percentage of welfare recipients younger than 7 years
+High-school degree;numeric;Percentage of student with highest school degree among all students that leave school
+No school degree;numeric;Percentage of student without school degree among all students that leave school
+Child care;numeric;Percentage of children under 3 years w.r.t to all children in day-care
+Business Regstr.;numeric;Number of business registrations per 10000 inhabitants
+Income;numeric;Available annual income per inhabitant
+Employees;numeric;Percentage of employed inhabitants
+GPD;numeric;GDP per capita in Euro 2009
+Unemployed;numeric;Percentage of unemployed inhabitants
+Unemployed Youth;numeric;Percentage of unemployed inhabitants younger than 25 years
+Permanently unemployed ;numeric;Percentage of permanently unemployed inhabitants
+Agricult. workf.;numeric;Number of employees working in agriculture, foresting, and fishing per 1000 inhabitants (Primary econ. sector)
+Ind. workf.;numeric;Number of employees working in producing or manufacturing industry or construction per 1000 inhabitants (Secondary econ. sector)
+Service workf.;numeric;Number of employees working in service, trade, gastronomy, financing, rental, and business, or traffic per 1000 inhabitants (Tertiary econ. sector)
+Pub. serv. workf.;numeric;Number of employees working in public (and equivalent private) services per 1000 inhabitants
+Cars;numeric;Number of cars per 1000 inhabitants
+Tractors;numeric;Percentage of tractors w.r.t number of motor vehicles
+Registrd. Web Doms.;numeric;Number de-Domains registered per 1000 inhabitants
+Bankruptcies;numeric;Number of business bankruptcies per 10000 business tax paying business

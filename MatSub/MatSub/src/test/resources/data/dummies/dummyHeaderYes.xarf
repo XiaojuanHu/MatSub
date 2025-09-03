@@ -1,0 +1,11 @@
+@relation dummyWithHeader
+
+@attribute dummyAttr1 real
+@attribute dummyAttr2 real
+@attribute dummyAttr3 real
+
+@data header=yes
+dummyAttr1, dummyAttr2, dummyAttr3
+1,2,3
+3,2,1
+2,1,3

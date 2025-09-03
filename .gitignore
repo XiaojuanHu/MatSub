@@ -1,0 +1,17 @@
+echo .DS_Store
+echo Thumbs.db
+echo node_modules/
+echo dist/
+echo build/
+echo __pycache__/
+echo *.py[cod]
+echo .venv/
+echo *.log
+echo *.o
+echo *.obj
+echo *.exe
+echo *.dll
+echo *.class
+echo target/
+echo .vscode/
+echo .idea/

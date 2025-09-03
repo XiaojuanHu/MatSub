@@ -1,0 +1,59 @@
+@relation binaries caption="Octet Binaries"
+@attribute components name caption="Components" description="..."
+@attribute delta_e numeric caption="Delta E" description="energy E(RS) - energy E(ZB)"
+@attribute sign_delta_e {-1,1} caption="sign(Delta E)" description="Sign of energy difference"
+@attribute thress_class_delta_e {-1,0,1} caption="three class Delta E" description="Sign of energy difference or 0 if abs(Delta E) less than 0.05 eV"
+@attribute ip_a numeric caption="IP(A)" description="Ionization potential of element A"
+@attribute ea_a numeric caption="EA(A)" description="Electronic affinity of element A"
+@attribute h_a numeric caption="H(A)" description="HOMO energy level of A"
+@attribute l_a numeric caption="L(A)" description="LUMO enegry level of element A"
+@attribute rs_a numeric caption="rs(A)" description="radius of s-orbital of element A"
+@attribute rp_a numeric caption="rp(A)" description="rp value of element A"
+@attribute rd_a numeric caption=rd(A) description="rd value of element A"
+@attribute ip_b numeric caption=IP(B) description="IP value of element B"
+@attribute ea_b numeric caption=EA(B),numeric description="EA value of element B"
+@attribute h_b numeric caption=H(B) description="H value of element B"
+@attribute l_b numeric caption=L(B) description="L value of element B"
+@attribute rs_b numeric caption=rs(B) description="rs value of element B"
+@attribute rp_b numeric caption=rp(B) description="rp value of element B"
+@attribute rd_b numeric caption=rd(B) description="rd value of element B"
+@attribute ip_diff numeric caption=IP(A)-IP(B)
+@attribute ea_diff numeric caption=EA(A)-EA(B)
+@attribute h_diff numeric caption=H(A)-H(B)
+@attribute l_diff numeric caption=L(A)-L(B)
+@attribute abs_rs_diff numeric caption=|rs(A)-rs(B)|
+@attribute abs_rp_diff numeric caption=|rp(A)-rp(B)|
+@attribute abs_rd_diff numeric caption=|rd(A)-rd(B)|
+@attribute rel_ip_diff numeric caption=(IP(A)-IP(B))/IP(A)
+@attribute rel_ea_diff numeric caption=(EA(A)-EA(B))/EA(A)
+@attribute rel_h_diff numeric caption=(H(A)-H(B))/H(A)
+@attribute rel_l_diff numeric caption=(L(A)-L(B))/L(A)
+@attribute rel_rs_diff numeric caption=(rs(A)-rs(B))/rs(A)
+@attribute rel_rp_diff numeric caption=(rp(A)-rp(B))/rp(A)
+@attribute rel_rd_diff numeric caption=(rd(A)-rd(B))/rd(A)
+@attribute en_a numeric caption=EN(A) description="electronegativity of A, --- (-1/2)(EA(A)+IP(A))"
+@attribute en_b numeric caption=EN(B) description="electronegativity of B, --- (-1/2)(EA(B)+IP(B))"
+@attribute hlgap_a numeric caption=H(A)-L(A) description="HOMO-LUMO gap of A"
+@attribute hlgap_b numeric caption=H(B)-L(B) description="HOMO-LUMO gap of B"
+@attribute ip_minus_ea_a numeric caption=IP(A)-EA(A)
+@attribute ip_minus_ea_b numeric caption=IP(B)-EA(B)
+@attribute h_a_minus_l_b numeric caption=H(A)-L(B)
+@attribute ip_a_minus_ea_b numeric caption=IP(A)-EA(B)
+@attribute ip_minus_ea_by_rs_a numeric caption=(IP(A)-EA(A))/rs(A)
+@attribute ip_minus_ea_b_by_rs_a numeric caption=(IP(B)-EA(B))/rs(A)
+@attribute h_a_minus_l_b_by_rs_a numeric caption=(H(A)-L(B))/rs(A)
+@attribute ip_a_minus_ea_b_by_rs_a numeric caption=(IP(A)-EA(B))/rs(A)
+@attribute ip_a_minus_ea_a_by_rp_a numeric caption=(IP(A)-EA(A))/rp(A)
+@attribute ip_b_minus_ea_b_by_rp_a numeric caption=(IP(B)-EA(B))/rp(A)
+@attribute h_a_minus_l_b_by_rp_a numeric caption=(H(A)-L(B))/rp(A)
+@attribute ip_a_minus_ea_b_by_rp_a numeric caption=(IP(A)-EA(B))/rp(A)
+@attribute ip_a_minus_ea_a_by_rd_a numeric caption=(IP(A)-EA(A))/rd(A)
+@attribute ip_b_minus_ea_b_by_rd_a numeric caption=(IP(B)-EA(B))/rd(A)
+@attribute h_a_minus_l_b_by_rd_a numeric caption=(H(A)-L(B))/rd(A)
+@attribute ip_a_minus_ea_b_rd_a numeric caption=(IP(A)-EA(B))/rd(A)
+@attribute lasso_1 numeric caption=(EA(B)-IP(B))/rp(A)^2 description="Feature 1 from Ghiringhelli et al."
+@attribute lassp_2 numeric caption=|rs(A)-rp(B)|/exp(rs(A)) description="Feature 2 from Ghiringhelli et al."
+@attribute lasso_3 numeric caption=|rp(B)-rs(B)|/exp(rd(A)+rs(B)) description="Feature 3 from Ghiringhelli et al."
+@attribute r_sigma numeric description="|(rp(A)+rs(A))-(rp(B)+rs(B))|"
+@attribute r_pi numeric description="|rp(A)-rs(A)|+|rp(B)-rs(B)|"
+@group "energy difference" functional_group {delta_e,sign_delta_e,thress_class_delta_e}

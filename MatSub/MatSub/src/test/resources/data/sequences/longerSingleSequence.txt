@@ -1,0 +1,16 @@
+@Relation simple_single_sequence
+
+@Attribute timestamp numeric
+@Attribute eventId categoric
+
+@Data
+1,1
+2,2
+3,3
+44,1
+45,3
+46,4
+77,1
+78,2
+90,3
+100,1

@@ -1,0 +1,4 @@
+id;categoric;id
+date;date;date
+feature1;categoric;feature1
+feature2;categoric;feature2

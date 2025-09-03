@@ -1,0 +1,26 @@
+@Relation date_based_sequence
+
+@Attribute id categoric
+@Attribute timestamp date "yyyy-MM-dd hh:mm:ss"
+@Attribute value1 categoric
+@Attribute value2 categoric
+
+@Data
+1,2013-10-16 00:00:00,value1,value1
+1,2015-05-05 00:00:00,value2,value2
+1,2015-10-16 00:00:00,value1,value2
+1,2016-02-23 00:00:00,value2,value1
+2,2014-11-10 00:00:00,value1,value3
+2,2015-08-01 00:00:00,value2,value4
+3,2015-01-02 00:00:00,value2,value10
+3,2015-05-03 00:00:00,value3,value20
+3,2015-10-16 00:00:00,value3,value30
+4,2013-10-16 00:00:00,value1,value1
+4,2015-05-05 00:00:00,value2,value2
+5,2015-10-16 00:00:00,value1,value2
+6,2016-02-23 00:00:00,value2,value1
+6,2014-11-10 00:00:00,value1,value3
+6,2015-08-01 00:00:00,value2,value4
+6,2015-01-02 00:00:00,value2,value10
+7,2015-05-03 00:00:00,value3,value20
+7,2015-10-16 00:00:00,value3,value30
