@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>390</x>
+      <y>320</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>patterns
+--
+propositional logic,
+pattern descriptors,
+significance measures</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>610</x>
+      <y>320</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>algorithms
+--
+mining algorithms,
+mining parameters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>170</x>
+      <y>320</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>data
+--
+left:
+tabular data interface,
+attribute metadata</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>390</y>
+      <w>280</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>30;30;30;50;260;50;260;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>390</y>
+      <w>490</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>30;30;30;50;470;50;470;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>520</x>
+      <y>350</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>30;30;90;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>150</x>
+      <y>280</y>
+      <w>640</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>mining</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
