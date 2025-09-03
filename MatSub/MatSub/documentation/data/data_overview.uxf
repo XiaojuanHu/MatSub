@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>11</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>66</x>
+      <y>253</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Datatable</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>341</x>
+      <y>253</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Attribute</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>616</x>
+      <y>253</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>AttributeGroup</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>242</x>
+      <y>242</y>
+      <w>120</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>33;33;99;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>517</x>
+      <y>220</y>
+      <w>120</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m..n</panel_attributes>
+    <additional_attributes>99;55;33;55</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>616</x>
+      <y>286</y>
+      <w>242</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>e.g, "Democrats 2012, Republicans 2012" together form "Election Result"
+fontsize=12
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>0</x>
+      <y>88</y>
+      <w>847</w>
+      <h>341</h>
+    </coordinates>
+    <panel_attributes>data
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>286</x>
+      <y>143</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>DataSpace</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>22</x>
+      <y>143</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>DataArtifact</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>66</x>
+      <y>363</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>PropositionalLogic</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>341</x>
+      <y>363</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Proposition</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>33</x>
+      <y>165</y>
+      <w>55</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0;30.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>33</x>
+      <y>165</y>
+      <w>55</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;30.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>198</x>
+      <y>132</y>
+      <w>109</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>88;33;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>242</x>
+      <y>352</y>
+      <w>120</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>33;33;99;33</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>165</x>
+      <y>275</y>
+      <w>33</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>275</y>
+      <w>44</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=m</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>495</x>
+      <y>132</y>
+      <w>341</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>collection of different data artifact typically linked by common set of underlying objects, e.g., "US counties"
+fontsize=12
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>341</x>
+      <y>209</y>
+      <w>275</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>measurement---one for each data object, e.g., "(votes for) Democrats 2012" 
+fontsize=12
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>561</x>
+      <y>352</y>
+      <w>286</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>logical statment that can be evaluated to true or false for each data object, e.g, 
+"Democrats 2012 &gt; Republicans 2012"
+fontsize=12
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

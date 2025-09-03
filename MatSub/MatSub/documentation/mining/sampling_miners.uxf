@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <help_text/>
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1020</x>
+      <y>0</y>
+      <w>350</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>/ConsaptBasedSamplingMiner/
+--
+PatternPruner
+--
++mine()
+/+getDistribution()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1050</x>
+      <y>780</y>
+      <w>330</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;WeightedDiscriminativyDistributionFactory&gt;&gt;
+--
+     powerOfFrequency
+     powerOfPosFrequency
+     powerOfNegFrequency
+rowWeightComputer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>510</x>
+      <y>520</y>
+      <w>450</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;DistributionFactory&gt;&gt;
+--
++getDistribution(Algorithm,DataTable): TwoStepPatternSampler
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>230</y>
+      <w>370</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ExceptionalModelSampler&gt;&gt;
+--
+     distributionFactory
+     patternPruner
+targets
+patternClassParameter
+posNegDbConverter
+--
+getPosNegDatabase(DataTable): PosNegDbInterface</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>680</x>
+      <y>780</y>
+      <w>270</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;DiscriminativyDistributionFactory&gt;&gt;
+--
+     powerOfFrequency
+     powerOfPosFrequency
+     powerOfNegFrequency
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>220</x>
+      <y>780</y>
+      <w>320</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;FrequencyDistributionFactory&gt;&gt;
+&lt;&lt;AreaTimesFrequencyDistributionFactory&gt;&gt;
+&lt;&lt;RareTimesFrequencyDistributionFactory&gt;&gt;
+--
+     powerOfFrequency
+     powerOfPosFrequency
+     powerOfNegFrequency
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>0</x>
+      <y>830</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Three different classes, 
+essentially the same content
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1010</x>
+      <y>1120</y>
+      <w>440</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;RowWeightComputer&gt;&gt;
+--
+getRowWeights(List&lt;Attribute&gt;): Map&lt;Transaction, Double&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>390</y>
+      <w>50</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;130</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>330</x>
+      <y>680</y>
+      <w>430</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>410;30;410;60;30;60;30;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>710</x>
+      <y>680</y>
+      <w>140</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;60;120;60;120;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>710</x>
+      <y>680</y>
+      <w>530</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;60;510;60;510;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1200</x>
+      <y>950</y>
+      <w>50</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;170</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1530</x>
+      <y>250</y>
+      <w>180</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;AssociationSampler&gt;&gt;
+--
+     distributionFactory
+     patternPruner
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>60</y>
+      <w>510</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>490;30;490;80;30;80;30;170</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1160</x>
+      <y>60</y>
+      <w>490</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;80;470;80;470;190</additional_attributes>
+  </element>
+</diagram>
