@@ -99,10 +99,10 @@ Important keywords and their descriptions are listed below.
 	- Purpose:
 > -   specify the method to measure the devation 
 > -     possible values:
->         - normalized_positive_mean_shift            <-- Subgroups biased toward high values, without boundary constraints
-          - normalized_negative_mean_shift           <-- Subgroups biased toward low values, without boundary constraints
-          - normalized_max_constant_ref                <-- Subgroups biased toward high values, with boundary constraints
-          - normalized_min_constant_ref                <-- Subgroups biased toward low values, with boundary constraints
+> 		- normalized_positive_mean_shift             <-- Subgroups biased toward high values, without boundary constraints
+> 		- normalized_negative_mean_shift             <-- Subgroups biased toward low values, without boundary constraints
+> 		- normalized_max_constant_ref                <-- Subgroups biased toward high values, with boundary constraints
+> 		- normalized_min_constant_ref                <-- Subgroups biased toward low values, with boundary constraints
 > -    (use: "dev_measure": "normalized_positive_mean_shift")
 
 -  **Tag: obj_func**
@@ -110,11 +110,11 @@ Important keywords and their descriptions are listed below.
 	- Purpose:
 > -   specify the quality function 
 > -     possible values:
-          - frequency times deviation
-          - frequency times aamd-gain times deviation
-          - sqrt(frequency) times deviation
-          - H(frequency) times deviation                  <--  Entropy times deviation
-          - multitask entropy gain
+> 		- frequency times deviation
+> 		- frequency times aamd-gain times deviation
+> 		- sqrt(frequency) times deviation
+> 		- H(frequency) times deviation                  <--  Entropy times deviation
+> 		- multitask entropy gain
 > -    (use: "obj_func": "frequency times deviation")
 
 -  **Tag: num_res**
