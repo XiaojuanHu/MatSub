@@ -16,8 +16,8 @@ You can either build from source using Maven, or download the pre-built JAR from
 mvn clean package -DskipTests
 ~~~
 - artifacts
-target/matsub-0.1.0.jar
-target/matsub-0.1.0-jar-with-dependencies.jar   <-- recommended runnable JAR
+    - target/matsub-0.1.0.jar
+    - target/matsub-0.1.0-jar-with-dependencies.jar   <-- recommended runnable JAR
 
 ## Input Files
 - **data.xarf**
