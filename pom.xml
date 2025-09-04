@@ -4,128 +4,60 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.realkd</groupId>
-	<url>https://bitbucket.org/realKD/realkd</url>
-	<artifactId>realkd</artifactId>
-	<name>realKD</name>
-	<description>A free open-source Java library that has been designed to help real users discovering real knowledge from real data.</description>
-	<inceptionYear>2014</inceptionYear>
-	<version>0.7.2</version>
+	<groupId>org.matsub</groupId>
+	<url>https://github.com/XiaojuanHu/MatSub</url>
+	<artifactId>matsub</artifactId>
+	<name>MatSub</name>
+	<description>An open-access software package designed to facilitate the application of Subgroup Discovery (SGD) algorithms in machine learning and data-driven scientific discovery.</description>
+	<inceptionYear>2025</inceptionYear>
+	<version>0.1.0</version>
 
 	<organization>
-		<name>The contributors of the realKD project</name>
-		<url>http://realkd.org</url>
+		<name>The contributors of the MatSub project</name>
+		<url>https://github.com/XiaojuanHu/MatSub</url>
 	</organization>
 
 	<developers>
 		<developer>
-			<name>Mario Boley</name>
-			<email>mario.boley@gmail.com</email>
-			<url>http://www.realkd.org/mario</url>
-			<organization>Monash University</organization>
-			<!-- <organizationUrl>www.mpi-inf.mpg.de</organizationUrl> -->
-			<roles>
-				<role>Project lead</role>
-				<role>Development</role>
-				<role>Reviewing</role>
-			</roles>
-		</developer>
-		<developer>
-			<name>Sandy Moens</name>
-			<email>sandy.moens@uantwerpen.be</email>
-			<url>http://adrem.ua.ac.be/smoens</url>
-			<organization>University of Antwerp</organization>
-			<!-- <organizationUrl>http://adrem.ua.ac.be</organizationUrl> -->
+			<name>Xiaojuan Hu</name>
+			<email>xiaojuanhu@zju.edu.cn</email>
+			<organization>Zhejiang University</organization>
 			<roles>
 				<role>Development</role>
 				<role>Reviewing</role>
 			</roles>
 		</developer>
 		<developer>
-			<name>Panagiotis Mandros</name>
-			<email>pmandros@mpi-inf.mpg.de</email>
-			<url>http://people.mpi-inf.mpg.de/~pmandros/</url>
-			<organization>Max Planck Informatics</organization>
+			<name>Sergey V. Levchenko</name>
+			<email>S.Levchenko@skoltech.ru</email>
+			<organization>Skolkovo Institute of Science and Technology</organization>
 			<roles>
 				<role>Development</role>
+				<role>Reviewing</role>
 			</roles>
 		</developer>
 		<developer>
-			<name>Janis Kalofolias</name>
-			<email>kalofolias@mpi-inf.mpg.de</email>
-			<url>http://www.mmci.uni-saarland.de/en/jkalofolias</url>
-			<organization>Saarland University, Cluster of Excellence MMCI</organization>
+			<name>Zhong-Kang Han</name>
+			<email>hanzk@zju.edu.cn</email>
+			<organization>Zhejiang University</organization>
 			<roles>
 				<role>Development</role>
-			</roles>
-		</developer>
-		<developer>
-			<name>Bo Kang</name>
-			<email>bo.kang@ugent.be</email>
-			<url>http://users.ugent.be/~bkang/</url>
-			<organization>Ghent University</organization>
-			<roles>
-				<role>Development</role>
+				<role>Reviewing</role>
 			</roles>
 		</developer>
 	</developers>
 
 	<contributors>
 		<contributor>
-			<name>Björn Jacobs</name>
-			<url>https://www.codecentric.de/team/bjoern-jacobs/</url>
-			<organization>codecentric</organization>
-		</contributor>
-		<contributor>
-			<name>Pavel Tokmakov</name>
-			<url>http://thoth.inrialpes.fr/people/tokmakov/</url>
-			<organization>INRIA</organization>
-		</contributor>
-		<contributor>
-			<name>Elvin Efendiev</name>
-			<url>http://www.elvinefendi.com/</url>
-		</contributor>
-		<contributor>
-			<name>Vladimir Dzyuba</name>
-			<url>http://vl-dz.net/</url>
-			<organization>Flanders Make</organization>
-		</contributor>
-		<contributor>
-			<name>Hoang-Vu Nguyen</name>
-			<url>https://sites.google.com/site/hoangvuntu/</url>
-			<organization>SAP</organization>
-		</contributor>
-		<contributor>
-			<name>Sebastian Bothe</name>
-		</contributor>
-		<contributor>
-			<name>Michael Hedderich</name>
-			<url>https://www.michael-hedderich.de/</url>
-			<organization>Saarland University</organization>
+			<name>Ali Ghanem</name>
+			<organization>Skolkovo Institute of Science and Technology</organization>
 		</contributor>
 	</contributors>
 
-	<mailingLists>
-		<mailingList>
-			<name>users</name>
-			<subscribe>mailto:realkd-users+subscribe@googlegroups.com</subscribe>
-			<unsubscribe>mailto:realkd-users+subscribe@googlegroups.com</unsubscribe>
-			<post>mailto:realkd-users@googlegroups.com</post>
-			<archive>https://groups.google.com/forum/#!forum/realkd-users</archive>
-		</mailingList>
-		<mailingList>
-			<name>developers</name>
-			<subscribe>mailto:realkd-developers+subscribe@googlegroups.com</subscribe>
-			<unsubscribe>mailto:realkd-developers+subscribe@googlegroups.com</unsubscribe>
-			<post>mailto:realkd-developers@googlegroups.com</post>
-			<archive>https://groups.google.com/forum/#!forum/realkd-developers</archive>
-		</mailingList>
-	</mailingLists>
-
 	<licenses>
 		<license>
-			<name>MIT</name>
-			<url>file://${project.basedir}/target/external-resources/root-content/LICENSE.txt</url>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -133,23 +65,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<repositories>
-		<repository>
-			<id>realKD-releases</id>
-			<url>https://bitbucket.org/realKD/releases/raw/master/releases</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>fail</checksumPolicy>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<!-- Guava: object utilities -->
@@ -420,10 +335,10 @@
 					</execution>
 				</executions>
 				<configuration>
-					<organizationName>realKD</organizationName>
-					<inceptionYear>2014</inceptionYear>
+					<organizationName>MatSub</organizationName>
+					<inceptionYear>2025</inceptionYear>
 					<licenseName>mit</licenseName>
-					<copyrightOwners>Contributors of the realKD Project</copyrightOwners>
+					<copyrightOwners>Contributors of the MatSub Project</copyrightOwners>
 					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 					<canUpdateCopyright>true</canUpdateCopyright>
 					<canUpdateDescription>true</canUpdateDescription>
@@ -471,18 +386,4 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
-	<distributionManagement>
-		<repository>
-			<id>local.release.repo</id>
-			<name>Local release repository</name>
-			<!-- Mario:next line assumes that local release repo is next to project 
-				folder (from which maven is run). I hope this does not influence non-deploy 
-				targets. Let me know if there is any problem with that. In the future maven 
-				should directly deploy to remote repo. For that everyone has to have a correctly 
-				configured settings.xml -->
-			<url>file:../releases/releases/</url>
-		</repository>
-	</distributionManagement>
-
 </project>

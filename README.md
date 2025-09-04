@@ -1,10 +1,23 @@
-# MatSub
+# MatSub v0.1.0
 
 ## Introduction
-MatSub is an open-access software package designed to facilitate the application of Subgroup Discovery (SGD) algorithms in machine learning and data-driven scientific discovery. A key contribution of MatSub lies in the development of novel quality functions tailored to materials informatics.
+MatSub is an open-access Java-based software package designed to facilitate the application of Subgroup Discovery (SGD) algorithms in machine learning and data-driven scientific discovery. A key contribution of MatSub lies in the development of novel quality functions tailored to materials informatics.
+This repository provides both source code and pre-built executables.
 
 ## Requirements
-- XXX
+- **Java 8 or later** (tested with Java 8/11/17)
+    - JRE is sufficient for running 
+    - JDK + Maven (3.6+) are required for building from source
+
+## Build from source
+You can either build from source using Maven, or download the pre-built JAR from the [Releases](https://github.com/XiaojuanHu/MatSub/releases) page.
+- from the project root (where pom.xml is located)
+~~~
+mvn clean package -DskipTests
+~~~
+- artifacts
+target/matsub-0.1.0.jar
+target/matsub-0.1.0-jar-with-dependencies.jar   <-- recommended runnable JAR
 
 ## Input Files
 - **data.xarf**
@@ -15,13 +28,20 @@ The input file input.json specifies parameters for the SGD process, including qu
 
 ## Example Usage
 An example of the usage of MatSub is in the **workingExample-SAAs** folder. The example should be run with the following command:
+- Windows
 ~~~
 cd workingExample-SAAs
-java -jar MatSub.java input.json > out.dat
+java -jar ..\target\matsub-0.1.0-jar-with-dependencies.jar input.json > out.dat
 ~~~
 
-## List of input keywords
-Important keywords and their descriptions in **input.json** are listed below.
+-Linux/macOS
+~~~
+cd workingExample-SAAs
+java -jar ../target/matsub-0.1.0-jar-with-dependencies.jar input.json > out.dat
+~~~
+
+## Input keywords (in **input.json**)
+Important keywords and their descriptions are listed below.
 
 ### workspaces
 - **Tag: datafile** 
@@ -78,21 +98,30 @@ Important keywords and their descriptions in **input.json** are listed below.
 	- Usage: "dev_measure": "*string*"
 	- Purpose:
 > -   specify the method to measure the devation 
-> -     normalized_positive_mean_shift
+> -     possible values:
+          - normalized_positive_mean_shift            <-- Subgroups biased toward high values, without boundary constraints
+          - normalized_negative_mean_shift           <-- Subgroups biased toward low values, without boundary constraints
+          - normalized_max_constant_ref                <-- Subgroups biased toward high values, with boundary constraints
+          - normalized_min_constant_ref                <-- Subgroups biased toward low values, with boundary constraints
 > -    (use: "dev_measure": "normalized_positive_mean_shift")
 
 -  **Tag: obj_func**
 	- Usage: "obj_func": "*string*"
 	- Purpose:
 > -   specify the quality function 
-> -     frequency times deviation
+> -     possible values:
+          - frequency times deviation
+          - frequency times aamd-gain times deviation
+          - sqrt(frequency) times deviation
+          - H(frequency) times deviation                  <--  Entropy times deviation
+          - multitask entropy gain
 > -    (use: "obj_func": "frequency times deviation")
 
 -  **Tag: num_res**
 	- Usage: "num_res": "*value*"
 	- Purpose:
 > -   specify the number of best orthogonal subgroups to return
-> -     2
+> -     2                                                                   <-- Output 2 orthogonal subgroups
 > -    (use: "num_res": "2")
 
 -  **Tag: num_threads**
@@ -108,6 +137,20 @@ Important keywords and their descriptions in **input.json** are listed below.
 > -   specify the number of seeds of Monte Carlo sampling
 > -     10000000
 > -    (use: "num_seeds": 10000000)
+
+-  **Tag: qual_func_params**
+	- Usage: "qual_func_params": "*value*"
+	- Purpose:
+> -   if dev_measure = normalized_max_constant_ref/normalized_min_constant_ref, specify the value of boundary.
+> -     0
+> -    (use: "qual_func_params": "0")
+
+-  **Tag: hard_cutoffs**
+	- Usage: "hard_cutoffs": "above/below"
+	- Purpose:
+> -   if dev_measure = normalized_max_constant_ref, hard_cutoffs = above, if dev_measure = normalized_min_constant_ref, hard_cutoffs = below.
+> -     above
+> -    (use: "hard_cutoffs": "above")
 
 ### dataPath
 -  **Tag: dataPath**
@@ -128,7 +171,7 @@ Important keywords and their descriptions in **input.json** are listed below.
 Any feedback, questions, bug reports should be report through the [Issue Tracker](https://github.com/XiaojuanHu/MatSub/issues).
 
 ## License
-This package is provided under license:
+This project is licensed under the Apache License 2.0 – see the LICENSE file for details.
 
 ## Citation
 When using MatSub in published work, please cite the following paper:

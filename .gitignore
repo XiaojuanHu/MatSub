@@ -1,11 +1,37 @@
-#************* Binaries
-.class
-bin/
+# Maven build
 /target/
-#************* Eclipse and linux specific
-.directory
-.settings/*
-#************* Local directories
-/jobs
-/data
-/output
+*.log
+*.tmp
+*.bak
+
+# Eclipse / IntelliJ / VS Code project files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*~
+*.swp
+
+# JAR / ZIP / other archives generated
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Test reports and coverage
+/test-output/
+.surefire-*
+/jacoco.exec
