@@ -99,7 +99,7 @@ Important keywords and their descriptions are listed below.
 	- Purpose:
 > -   specify the method to measure the devation 
 > -     possible values:
-          - normalized_positive_mean_shift            <-- Subgroups biased toward high values, without boundary constraints
+            - normalized_positive_mean_shift            <-- Subgroups biased toward high values, without boundary constraints
           - normalized_negative_mean_shift           <-- Subgroups biased toward low values, without boundary constraints
           - normalized_max_constant_ref                <-- Subgroups biased toward high values, with boundary constraints
           - normalized_min_constant_ref                <-- Subgroups biased toward low values, with boundary constraints
