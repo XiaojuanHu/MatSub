@@ -34,7 +34,7 @@ cd workingExample-SAAs
 java -jar ..\target\matsub-0.1.0-jar-with-dependencies.jar input.json > out.dat
 ~~~
 
--Linux/macOS
+- Linux/macOS
 ~~~
 cd workingExample-SAAs
 java -jar ../target/matsub-0.1.0-jar-with-dependencies.jar input.json > out.dat
