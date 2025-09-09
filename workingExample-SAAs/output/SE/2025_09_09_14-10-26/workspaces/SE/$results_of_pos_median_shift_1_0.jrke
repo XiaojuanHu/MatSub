@@ -1,0 +1,67 @@
+{
+  "type" : "patternCollection",
+  "id" : "$results_of_pos_median_shift_1_0",
+  "name" : "",
+  "description" : "",
+  "patterns" : [ {
+    "type" : "exceptionalSubgroupPattern",
+    "descriptor" : {
+      "type" : "subgroup",
+      "table" : "wpo_1_0_0",
+      "selector" : {
+        "type" : "attributeBasedConjunction",
+        "table" : "wpo_1_0_0",
+        "attributes" : [ "EAH", "EBH", "EC", "dd" ],
+        "constraints" : [ {
+          "type" : "lessOrEquals",
+          "value" : 1.1885
+        }, {
+          "type" : "lessThan",
+          "value" : -2.78655
+        }, {
+          "type" : "greaterOrEquals",
+          "value" : -5.127750000000001
+        }, {
+          "type" : "greaterOrEquals",
+          "value" : 2.0698
+        } ]
+      },
+      "reference" : "global",
+      "targetAttributes" : [ "property" ],
+      "targetModellingMethod" : [ "de.unibonn.realkd.patterns.models.mean.MetricEmpiricalDistributionFactory", "Empirical distribution" ],
+      "targetReferenceModel" : {
+        "type" : "metricEmpiricalDistribution",
+        "means" : [ -0.009958289511156153 ],
+        "covarianceMatrix" : [ [ 0.927848686016975 ] ],
+        "medians" : [ 0.09826914 ],
+        "medianDeviations" : [ 0.7341033953083159 ],
+        "mins" : [ -4.50660046 ],
+        "maxs" : [ 3.5997409 ]
+      },
+      "targetLocalModel" : {
+        "type" : "metricEmpiricalDistribution",
+        "means" : [ -1.3533670572784808 ],
+        "covarianceMatrix" : [ [ 0.8347493019248011 ] ],
+        "medians" : [ -1.124685001 ],
+        "medianDeviations" : [ 0.6989258571668006 ],
+        "mins" : [ -4.50660046 ],
+        "maxs" : [ -0.14232301 ]
+      }
+    },
+    "deviationMeasure" : "normalized_min",
+    "measurements" : [ {
+      "measure" : "frequency",
+      "value" : 0.16024340770791076,
+      "auxiliaryMeasurements" : [ {
+        "measure" : "support",
+        "value" : 79.0
+      } ]
+    }, {
+      "measure" : "normalized_min",
+      "value" : 0.4616218024650272
+    }, {
+      "measure" : "mean_absolute_median_deviation_reduction",
+      "value" : 0.04791905113957572
+    } ]
+  } ]
+}

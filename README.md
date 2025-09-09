@@ -100,9 +100,9 @@ Important keywords and their descriptions are listed below.
 > -   specify the method to measure the devation 
 > -     possible values:
 > 		- normalized_positive_mean_shift             <-- Subgroups biased toward high values, without boundary constraints
-> 		- normalized_negative_mean_shift             <-- Subgroups biased toward low values, without boundary constraints
-> 		- normalized_max_constant_ref                <-- Subgroups biased toward high values, with boundary constraints
-> 		- normalized_min_constant_ref                <-- Subgroups biased toward low values, with boundary constraints
+> 		- normalized_negative_mean_shift            <-- Subgroups biased toward low values, without boundary constraints
+> 		- normalized_max                                        <-- Subgroups biased toward high values, with boundary constraints
+> 		- normalized_min                                         <-- Subgroups biased toward low values, with boundary constraints
 > -    (use: "dev_measure": "normalized_positive_mean_shift")
 
 -  **Tag: obj_func**
@@ -141,14 +141,14 @@ Important keywords and their descriptions are listed below.
 -  **Tag: qual_func_params**
 	- Usage: "qual_func_params": "*value*"
 	- Purpose:
-> -   if dev_measure = normalized_max_constant_ref/normalized_min_constant_ref, specify the value of boundary.
+> -   if dev_measure = normalized_max/normalized_min, specify the value of boundary.
 > -     0
 > -    (use: "qual_func_params": "0")
 
 -  **Tag: hard_cutoffs**
 	- Usage: "hard_cutoffs": "above/below"
 	- Purpose:
-> -   if dev_measure = normalized_max_constant_ref, hard_cutoffs = above, if dev_measure = normalized_min_constant_ref, hard_cutoffs = below.
+> -   if dev_measure = normalized_max, hard_cutoffs = above, if dev_measure = normalized_min, hard_cutoffs = below.
 > -     above
 > -    (use: "hard_cutoffs": "above")
 

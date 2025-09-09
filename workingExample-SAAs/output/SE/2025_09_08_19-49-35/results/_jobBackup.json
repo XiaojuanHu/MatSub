@@ -1,10 +1,10 @@
 {
   "type" : "productWorkScheme",
-  "id" : "zT",
+  "id" : "SE",
   "workspaces" : [ {
     "type" : "workspaceFromXarf",
-    "id" : "zT",
-    "datafile" : "train.xarf",
+    "id" : "SE",
+    "datafile" : "data.xarf",
     "propScheme" : {
       "type" : "standardPropScheme",
       "defaultMetricRule" : {
@@ -20,7 +20,7 @@
     "algorithm" : "EMM_SAMPLER",
     "parameters" : {
       "num_seeds" : "1000000",
-      "dev_measure" : "normalized_max_constant_ref",
+      "dev_measure" : "normalized_min",
       "attr_filter" : "[id,EH,EHH]",
       "num_res" : "2",
       "num_threads" : "10",

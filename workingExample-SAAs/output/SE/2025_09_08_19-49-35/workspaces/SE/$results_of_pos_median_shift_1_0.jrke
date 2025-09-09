@@ -11,22 +11,19 @@
       "selector" : {
         "type" : "attributeBasedConjunction",
         "table" : "wpo_1_0_0",
-        "attributes" : [ "EC", "ECH", "IPH", "dd", "ddH" ],
+        "attributes" : [ "EBH", "EC", "LH", "dd" ],
         "constraints" : [ {
+          "type" : "lessOrEquals",
+          "value" : -2.22755
+        }, {
           "type" : "greaterOrEquals",
           "value" : -5.127750000000001
         }, {
-          "type" : "lessOrEquals",
-          "value" : -3.0673500000000002
-        }, {
-          "type" : "lessOrEquals",
-          "value" : 8.994
+          "type" : "greaterOrEquals",
+          "value" : -3.77095
         }, {
           "type" : "greaterOrEquals",
           "value" : 2.0698
-        }, {
-          "type" : "lessOrEquals",
-          "value" : 2.6074
         } ]
       },
       "reference" : "global",
@@ -51,7 +48,7 @@
         "maxs" : [ -0.14232301 ]
       }
     },
-    "deviationMeasure" : "normalized_max_constant_ref",
+    "deviationMeasure" : "normalized_min",
     "measurements" : [ {
       "measure" : "frequency",
       "value" : 0.16024340770791076,
@@ -60,7 +57,7 @@
         "value" : 79.0
       } ]
     }, {
-      "measure" : "normalized_max_constant_ref",
+      "measure" : "normalized_min",
       "value" : 0.4616218024650272
     }, {
       "measure" : "mean_absolute_median_deviation_reduction",
@@ -74,19 +71,22 @@
       "selector" : {
         "type" : "attributeBasedConjunction",
         "table" : "wpo_1_0_0",
-        "attributes" : [ "EB", "ECH", "IPH", "dd" ],
+        "attributes" : [ "DC", "DSH", "EB", "LH", "R" ],
         "constraints" : [ {
-          "type" : "lessThan",
-          "value" : -5.6876
+          "type" : "lessOrEquals",
+          "value" : 1.4617
+        }, {
+          "type" : "greaterThan",
+          "value" : -1.1532
         }, {
           "type" : "greaterOrEquals",
-          "value" : -6.4108
+          "value" : -8.217
         }, {
-          "type" : "lessThan",
-          "value" : 6.7975
+          "type" : "greaterOrEquals",
+          "value" : -2.7933000000000003
         }, {
-          "type" : "lessThan",
-          "value" : 2.1988
+          "type" : "lessOrEquals",
+          "value" : 1.62
         } ]
       },
       "reference" : "global",
@@ -103,28 +103,28 @@
       },
       "targetLocalModel" : {
         "type" : "metricEmpiricalDistribution",
-        "means" : [ -0.710465355722222 ],
-        "covarianceMatrix" : [ [ 0.22483392031829375 ] ],
+        "means" : [ -0.8756425517083335 ],
+        "covarianceMatrix" : [ [ 0.4960201019909681 ] ],
         "medians" : [ -0.6598198 ],
-        "medianDeviations" : [ 0.3337507253580247 ],
-        "mins" : [ -2.3788259 ],
-        "maxs" : [ -0.037958499 ]
+        "medianDeviations" : [ 0.4964784274247687 ],
+        "mins" : [ -3.73226097 ],
+        "maxs" : [ -0.060883701 ]
       }
     },
-    "deviationMeasure" : "normalized_max_constant_ref",
+    "deviationMeasure" : "normalized_min",
     "measurements" : [ {
       "measure" : "frequency",
-      "value" : 0.07302231237322515,
+      "value" : 0.1460446247464503,
       "auxiliaryMeasurements" : [ {
         "measure" : "support",
-        "value" : 36.0
+        "value" : 72.0
       } ]
     }, {
-      "measure" : "normalized_max_constant_ref",
-      "value" : 0.44874737411748966
+      "measure" : "normalized_min",
+      "value" : 0.45157543192827004
     }, {
       "measure" : "mean_absolute_median_deviation_reduction",
-      "value" : 0.5453627820126716
+      "value" : 0.3236941409101468
     } ]
   } ]
 }

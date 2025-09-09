@@ -1,10 +1,10 @@
 {
   "type" : "productWorkScheme",
-  "id" : "zT",
+  "id" : "SE",
   "workspaces" : [ {
     "type" : "workspaceFromXarf",
-    "id" : "zT",
-    "datafile" : "train.xarf",
+    "id" : "SE",
+    "datafile" : "data.xarf",
     "propScheme" : {
         "type" : "standardPropScheme",
         "defaultMetricRule" : {
@@ -21,12 +21,12 @@
     "parameters" : {
 	"targets" : "[property]",
 	"attr_filter" : "[id,EH,EHH]",
-      "dev_measure" : "normalized_max_constant_ref",
+      "dev_measure" : "normalized_min",
       "obj_func" : "frequency times deviation",
-	"num_res" : "2",
+	"num_res" : "1",
 	"num_threads" : 10,
 	"qual_func_params" : "0",
-	"hard_cutoffs" : "above",
+	"hard_cutoffs" : "below",
       "num_seeds" : "1000000"
     }
   } ],
