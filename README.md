@@ -5,9 +5,9 @@ MatSub is an open-access Java-based software package designed to facilitate the 
 This repository provides both source code and pre-built executables.
 
 ## Developers
-Zhong-Kang Han, Zhejiang University
-Sergey V. Levchenko, Skolkovo Institute of Science and Technology
-Xiaojuan Hu, Zhejiang University
+- Zhong-Kang Han, Zhejiang University
+- Sergey V. Levchenko, Skolkovo Institute of Science and Technology
+- Xiaojuan Hu, Zhejiang University
 
 ## Requirements
 - **Java 8 or later** (tested with Java 8/11/17)
