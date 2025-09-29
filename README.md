@@ -4,6 +4,11 @@
 MatSub is an open-access Java-based software package designed to facilitate the application of Subgroup Discovery (SGD) algorithms in machine learning and data-driven scientific discovery. A key contribution of MatSub lies in the development of novel quality functions tailored to materials informatics.
 This repository provides both source code and pre-built executables.
 
+## Developers
+Zhong-Kang Han, Zhejiang University
+Sergey V. Levchenko, Skolkovo Institute of Science and Technology
+Xiaojuan Hu, Zhejiang University
+
 ## Requirements
 - **Java 8 or later** (tested with Java 8/11/17)
     - JRE is sufficient for running 
